@@ -1,0 +1,26 @@
+# UHF RFID Reader Integration - Python Dependencies
+# =================================================
+
+# Core dependency for Java-Python bridge
+JPype1==1.6.0
+
+# Standard library modules used (no installation required):
+# - os
+# - threading  
+# - time
+# - logging
+# - typing
+
+# Notes:
+# ------
+# 1. JPype1 is required for communicating with the Java UHF reader libraries
+# 2. Java 17+ must be installed separately (not via pip)
+# 3. Vendor UHF libraries (UHFReader18.dll/.so) must be placed in java/ directory
+# 4. All other imports are from Python standard library
+
+# Development/Optional:
+# ---------------------
+# If you need additional development tools, consider adding:
+# pytest>=7.0.0        # For testing
+# black>=22.0.0         # For code formatting
+# flake8>=5.0.0         # For linting
