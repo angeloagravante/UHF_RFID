@@ -11,6 +11,19 @@ package UHF;
  */
 public class Reader18 {
 
+    // Load the native library
+    static {
+        try {
+            System.loadLibrary("UHFReader18");
+        } catch (UnsatisfiedLinkError e) {
+            try {
+                System.loadLibrary("UHF_Reader18");
+            } catch (UnsatisfiedLinkError e2) {
+                System.err.println("Could not load UHF reader native library: " + e2.getMessage());
+            }
+        }
+    }
+
     /**
      * @param args the command line arguments
      */
